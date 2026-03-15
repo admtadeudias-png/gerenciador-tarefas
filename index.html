@@ -10,21 +10,41 @@
 
 <body>
 
-<div class="container">
 
-<h1>Lista de tarefas</h1>
+<section>
 
-<div class="entrada">
+	<h1>Gerenciador de Tarefas</h1>
 
-<input type="text" id="tarefaInput" placeholder="Digite uma tarefa">
-<button id="adicionarBtn">Adicionar</button>
-
+	<div class="filtros">
+<button id="filtroTodas">Todas</button>
+<button id="filtroPendentes">Pendentes</button>
+<button id="filtroConcluidas">Concluídas</button>
 </div>
 
+	<div class="entrada">
+<input type="text" id="inputTarefa" placeholder="Digite uma tarefa">
+<button id="btnAdicionar">+</button>
+</div>  
+
+
+	
+<div class="whatsapp">
+<input type="text" id="numeroWhatsApp" value="+55" placeholder="Digite seu número com DD">
+<button id="enviarWhatsApp">📲 Enviar tarefas para WhatsApp</button>
+</div>
 
 <ul id="listaTarefas"></ul>
 
+<p id="contador"></p>
+
+<div class="progresso">
+	<div id="barraProgresso">
 </div>
+
+
+
+
+</section>
 
 <script src="script.js"></script>
    
